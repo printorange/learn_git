@@ -24,7 +24,9 @@ git rebase --origin/dev
 git push
 ```
 
-## git reset
+## `git reset`
+
+[`git reset`三种模式](https://www.jianshu.com/p/c2ec5f06cf1a)
 
 1. `git reset --hard` (暂存区和工作区的东西都会舍弃)
 2. `git reset --soft` (暂存区和工作区保持不变，reset导致的差异转到暂存区)
@@ -53,3 +55,7 @@ git checkout dev_xx
 git reset --hard dev
 # 继续开发
 ```
+
+## `git revert`
+
+[`git revert`使用以及理解](https://blog.csdn.net/allanGold/article/details/111372750)

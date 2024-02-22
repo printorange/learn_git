@@ -32,30 +32,30 @@ git push
 2. `git reset --soft` (暂存区和工作区保持不变，reset导致的差异转到暂存区)
 3. `git reset --mixed` (default) (暂存区、工作区、reset导致的差异通通转到工作区.效果看起来就是原节点和Reset节点之间的所有差异都会放到工作目录中)
 
+## `git revert`
+
+[`git revert`使用以及理解](https://blog.csdn.net/allanGold/article/details/111372750)
+
 ## indetermination
 
 main分支 / dev分支
 
-- 个人在本地仓库新建一个dev_xx分支，并在上面开发，开发完成后合并到本地dev上，然后push到云端dev分支上
-- 如果push成功，结束；如果push失败，可能是其他开发者在云端dev分支上增加了新内容，此时为了云端dev分支的美观，可以使用`git pull --rebase`命令同步到本地，然后再push
-
 ```
 git checkout -b dev_xx
+# 在dev_xx分支上
 git commit
-git checkout dev
+git fetch origin dev
+git merge dev  # 需要的话解决冲突
+
+# 在dev分支上
 git merge dev_xx
 git push
-
-# success 结束
-
-# fail 
-git pull --rebase
-git push
-git checkout dev_xx
-git reset --hard dev
-# 继续开发
 ```
 
-## `git revert`
+## todo
 
-[`git revert`使用以及理解](https://blog.csdn.net/allanGold/article/details/111372750)
+- [`git fetch`](https://www.yiibai.com/git/git_fetch.html)
+- [`git cherry-pick`](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+- [Git删除远程某个历史提交记录](https://www.jianshu.com/p/18b5cbc3e702)
+- [`git rebase`](https://lvan-zhang.blog.csdn.net/article/details/128848133?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=1)
+- [冲突解决](https://www.kingname.info/2020/09/13/how-to-reslove-conflict/)和[github实验](https://learn.microsoft.com/zh-cn/training/modules/resolve-merge-conflicts-github/?WT.mc_id=DT-MVP-5003916)

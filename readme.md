@@ -36,24 +36,16 @@ git push
 
 main分支 / dev分支
 
-- 个人在本地仓库新建一个dev_xx分支，并在上面开发，开发完成后合并到本地dev上，然后push到云端dev分支上
-- 如果push成功，结束；如果push失败，可能是其他开发者在云端dev分支上增加了新内容，此时为了云端dev分支的美观，可以使用`git pull --rebase`命令同步到本地，然后再push
-
 ```
 git checkout -b dev_xx
+# 在dev_xx分支上
 git commit
-git checkout dev
+git fetch origin dev
+git merge dev  # 需要的话解决冲突
+
+# 在dev分支上
 git merge dev_xx
 git push
-
-# success 结束
-
-# fail 
-git pull --rebase
-git push
-git checkout dev_xx
-git reset --hard dev
-# 继续开发
 ```
 
 ## `git revert`

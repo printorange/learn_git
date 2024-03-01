@@ -69,4 +69,3 @@ git push
 - [`git cherry-pick`](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
 - [Git删除远程某个历史提交记录](https://www.jianshu.com/p/18b5cbc3e702)
 - [`git rebase`](https://lvan-zhang.blog.csdn.net/article/details/128848133?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=1)
-- [冲突解决](https://www.kingname.info/2020/09/13/how-to-reslove-conflict/)和[github实验](https://learn.microsoft.com/zh-cn/training/modules/resolve-merge-conflicts-github/?WT.mc_id=DT-MVP-5003916)

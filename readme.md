@@ -47,6 +47,10 @@ git push
   - `git diff branch1 branch2`              显示出所有有差异的文件的详细差异(更详细)
   - `git diff branch1 branch2 具体文件路径` 显示指定文件的详细差异(对比内容)
 
+## `git cherry-pick`
+
+[`git cherry-pick`使用以及理解](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+
 ## indetermination
 
 main分支 / dev分支
@@ -66,6 +70,5 @@ git push
 ## todo
 
 - [`git fetch`](https://www.yiibai.com/git/git_fetch.html)
-- [`git cherry-pick`](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
 - [Git删除远程某个历史提交记录](https://www.jianshu.com/p/18b5cbc3e702)
 - [`git rebase`](https://lvan-zhang.blog.csdn.net/article/details/128848133?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128848133-blog-106479779.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=1)
